@@ -13,8 +13,8 @@
 
 typedef struct _type
 {
-  char *tp;
-  int (*f)();
+	char *tp;
+	int (*f)();
 } _type_t;
 int _printf(const char *format, ...);
 int (*get_func(char s))(va_list);
