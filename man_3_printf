@@ -1,4 +1,4 @@
-.TH man 0 "24 October 2020" "0.01" "_printf man page"
+.TH _PRINTF(0) "24 October 2020" "0.01" "_printf Man Page"
 .SH NAME
 .B _printf
 - function to produce output according to a format.
@@ -39,6 +39,18 @@ The function will print the character based on the value stored at the
 table.
 .IP -s
 The function will print a string excluding the null byte at the end.
+.SH EXAMPLE
+The programm takes any other character before the flag "%" and prints them, once the flag is determine, the program compares the next char to it and determines what kind of function has to be used.
+
+.IP i.e
+The line
+.BR _printf("Hello %s", "World")
+would print
+.BR "Hello World"
+
+In case that the
+.I format
+does not match any of the options, the program will take it as a regular char and print it.
 .SH SEE ALSO
 printf(3)
 .SH BUGS
