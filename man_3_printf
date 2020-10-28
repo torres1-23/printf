@@ -8,7 +8,7 @@
 
 .BR int _printf(const char *format, ...);
 .SH DESCRIPTION
-This function produce standart output according to a
+This function produce standard output according to a
 .B format
 given.
 .SH RETURN VALUES
@@ -28,13 +28,13 @@ it will convert the next argument of the function based on the modifier after th
 .SH MODIFIERS
 Once the function identifies the flag
 .BI %
-it will look for a modifier (d,i,c,s), bellow we explainned the usage of each modifier:
+it will look for a modifier (d,i,c,s), below we explain the usage of each modifier:
 .IP -d
 The function will print an integer with sign in base 10.
 .IP -i
 The function will print an integer with sign in base 10.
 .IP -c
-The function will print the character based on the value sotored at the
+The function will print the character based on the value stored at the
 .I ASCII
 table.
 .IP -s

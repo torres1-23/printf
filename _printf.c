@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _printf - prints anything.
+ * _printf - prints anything as printf.
  * @format: list of types of arguments passed to the function
  *
  * Return: Number of characters printed.
@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 }
 
 /**
- * get_func - gets function needed.
+ * get_func - gets function needed depending on the type.
  * @s: identifier.
  *
  * Return: Pointer to function.
