@@ -57,7 +57,6 @@ int (*get_func(char s))(va_list)
 		{"s", p_string},
 		{"d", p_int},
 		{"i", p_int},
-		{"u", p_unsi},
 		{NULL, NULL}
 	};
 	int i = 0;

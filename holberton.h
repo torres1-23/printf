@@ -22,5 +22,4 @@ int _print_helper(const char *format, int i, int cont);
 int p_char(va_list a);
 int p_string(va_list a);
 int p_int(va_list a);
-
 #endif /* _HOLBERTON_H_ */
