@@ -75,3 +75,41 @@ int p_int(va_list a)
 	}
 	return (cont);
 }
+
+/**
+ * p_bin - Function to write an unsigned int as binary
+ * @a: Integer to print
+ * Return: binary string length
+ */
+int p_bin(va_list a)
+{
+	unsigned int n = va_arg(a, unsigned int);
+	unsigned int cont = 0, i = 0, j;
+	char *c;
+
+	if (n <= 0)
+	{
+		write(1, "0", 1);
+		cont++;
+		return (cont);
+	}
+	c = malloc(sizeof(char) * 32);
+	while (n > 0)
+	{
+		if (n % 2 == 0)
+			c[i] = '0';
+		else
+			c[i] = '1';
+		n = n / 2;
+		i++;
+	}
+	c[i] = '\0';
+	for (j = 0; i > 0; j++)
+	{
+		write(1, &c[i - 1], 1);
+		i--;
+		cont++;
+	}
+	free(c);
+	return (cont);
+}
