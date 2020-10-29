@@ -58,7 +58,7 @@ int (*get_func(char s))(va_list)
 		{"d", p_int},
 		{"i", p_int},
 		{"b", p_bin},
-                {"r", p_revs},
+		{"r", p_revs},
 		{NULL, NULL}
 	};
 	int i = 0;
