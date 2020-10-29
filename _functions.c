@@ -122,7 +122,7 @@ int p_bin(va_list a)
  */
 int p_revs(va_list a)
 {
-        char *str;
+	char *str;
 	unsigned int len = 0, i;
 
 	str = va_arg(a, char *);
@@ -133,7 +133,7 @@ int p_revs(va_list a)
 	for (i = 0; len > 0; i++)
 	{
 		write(1, &str[len - 1], 1);
-		len --;
+		len--;
 	}
 	return (i);
 }
