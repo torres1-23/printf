@@ -94,6 +94,8 @@ int p_bin(va_list a)
 		return (cont);
 	}
 	c = malloc(sizeof(char) * 32);
+        if (!c)
+                return (-1);
 	while (n > 0)
 	{
 		if (n % 2 == 0)
