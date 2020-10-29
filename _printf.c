@@ -59,7 +59,7 @@ int (*get_func(char s))(va_list)
 		{"i", p_int},
 		{"b", p_bin},
 		{"r", p_revs},
-		{"R", p_root13}
+		{"R", p_root13},
 		{NULL, NULL}
 	};
 	int i = 0;
