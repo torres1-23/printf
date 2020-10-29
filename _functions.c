@@ -32,7 +32,6 @@ int p_string(va_list a)
 		i++;
 	}
 	return (i);
-
 }
 
 /**
@@ -114,4 +113,27 @@ int p_bin(va_list a)
 	}
 	free(c);
 	return (cont);
+}
+
+/**
+ * p_revs - Function to write a reversed string
+ * @a: String to reverse and print
+ * Return: string length
+ */
+int p_revs(va_list a)
+{
+        char *str;
+	unsigned int len = 0, i;
+
+	str = va_arg(a, char *);
+	if (!str)
+		str = "(null)";
+	while (str[len])
+		len++;
+	for (i = 0; len > 0; i++)
+	{
+		write(1, &str[len - 1], 1);
+		len --;
+	}
+	return (i);
 }
